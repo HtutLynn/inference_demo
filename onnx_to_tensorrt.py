@@ -46,6 +46,9 @@ def build_engine(onnx_file_path, engine_file_path, batch_size=1, verbose=False, 
             print(shape)
             shape[0] = int(batch_size)
             network.get_input(0).shape = shape
+            last_layer = network.get_layer(network.num_layers - 1)
+            if not last_layer.get_output(0):
+                network.mark_output(last_layer.get_output(0))
         
         print("Completed parsing of ONNX file")
         print('Building an engine; this may take a while...')
