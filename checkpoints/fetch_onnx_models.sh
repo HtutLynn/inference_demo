@@ -7,5 +7,6 @@ wget https://altotechpublic.s3-ap-southeast-1.amazonaws.com/naplabchula/models/c
 wget https://altotechpublic.s3-ap-southeast-1.amazonaws.com/naplabchula/models/custom_head_YOLOv5_4.onnx -q --show-progress --no-clobber
 wget https://altotechpublic.s3-ap-southeast-1.amazonaws.com/naplabchula/models/custom_head_YOLOv5_6.onnx -q --show-progress --no-clobber
 wget https://altotechpublic.s3-ap-southeast-1.amazonaws.com/naplabchula/models/demo_YOLOv5_1.onnx -q --show-progress --no-clobber
+wget https://altotechpublic.s3-ap-southeast-1.amazonaws.com/naplabchula/models/opset10_head_YOLOv5_1.onnx -q --show-progress --no-clobber
 
 echo "Done!"
